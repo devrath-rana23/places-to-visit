@@ -1,11 +1,6 @@
-.App-body {
-    padding: 30px;
-}
-
 .App {
+    color: #f9f295;
     background: url("./assets/bg_image.png");
-    width: 100%;
-    height: 100%;
     box-sizing: border-box;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,12 +8,17 @@
 }
 
 .App-header {
+    width: inherit;
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: space-between;
-    color: #f9f295;
-    font-size: large;
+    font-size: 30px;
     font-weight: bold;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    margin: 0px 30px 0px 30px;
+    padding: 30px 0px 30px 0px;
 }
 
 .App-logo {
@@ -26,11 +26,132 @@
 }
 
 .App-navigation-links {
+    flex: 0.3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-self: center;
-
 }
 
 .App-link {
+    flex: 0.3;
     align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
 
+.App-banner-section {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.App-banner-text {
+    font-size: 75px;
+}
+
+.App-banner-image {
+    height: 500px;
+}
+
+.App-body-section {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.cardSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardBody {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #f9f295;
+}
+
+.cardImage {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+.cardTitle {
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 330px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #f9f295;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    margin-right: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #f9f295 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.App-footer {
+    border-top-style: solid;
+    border-top-width: 5px;
+    color: #f9f295;
+    margin: 30px;
+    font-size: 30px;
+    flex-direction: column;
+    display: flex;
+}
+
+.App-footer-links{
+    list-style: none;
+}
+
+.App-footer-end-section{
+    align-self: center;
+    margin:30px 0px 30px 0px;
 }

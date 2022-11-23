@@ -13,9 +13,9 @@
         html,
         body,
         #root {
+            font-family: 'PT Serif', serif;
             margin: 0;
             height: 100%;
-            overflow: hidden;
         }
     </style>
 </head>
